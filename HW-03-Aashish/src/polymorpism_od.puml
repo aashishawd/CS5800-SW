@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+object "ship1:Ship" as s1{
+    shipName= "Titanic"
+    yearBuilt= "March31st,1990"
+}
+
+object "ship2:CruiseShip" as s2{
+    shipName = "MVGemini"
+    yearBuilt = "May30th,1991"
+    maxNumberPassengers = 100
+}
+
+object "ship3:CargoShip" as s3{
+    shipName = "EverGiven"
+    yearBuilt = "September25th,2018"
+    cargoCapacityInTonnage = 220940
+}
+
+class Ship{
+}
+
+Ship <|-- s1
+Ship <|-- s2
+Ship <|-- s3
+
+@enduml
